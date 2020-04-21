@@ -2,11 +2,11 @@ div{
     transition: all ease 0.3s;
     background-color: aqua;
     font-size: 16px;
-    padding: 10px;
+    padding: 5px;
     width: 10%;
     height: 10%;
     float: left;
-    margin: 12px;
+    margin: 25px;
     text-align: center;
 }
 
@@ -38,4 +38,38 @@ div{
     transform: translateX(-3px);
     border-bottom: 2px solid grey;
     border-right: 2px solid grey;
+}
+
+@keyframes balancar {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    45% {
+        transform: translateX(5px);
+    }
+    60% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+.balanco:hover {
+    animation: balancar 1s ease;
+    animation-iteration-count: 1;
+}
+
+.borda:hover {
+    box-shadow: inset 0 0 0 3px;
 }
