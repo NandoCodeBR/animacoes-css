@@ -1,9 +1,19 @@
 @keyframes loadingAnimation {
     from {
         opacity: 0;
+      
     }
     to {
         opacity: 80%;
+      
+    }
+}
+@keyframes loadingAnimationDiv {
+    from {
+        top: 20%;
+    }
+    to {
+        top: 45%;
     }
 }
 
@@ -27,7 +37,7 @@ div.animado{
     margin: 0;
     padding: 0;
     text-align: center;
-    
+    animation: loadingAnimationDiv 1s;
 }
 div.caixa{
     height: 100%;
@@ -37,7 +47,7 @@ div.caixa{
     background-attachment: fixed;
     background-position: center;
     opacity: 80%;
-    animation: loadingAnimation 0.5s;
+    animation: loadingAnimation 1s;
     
 }
 #caixa {
