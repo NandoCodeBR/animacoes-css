@@ -1,40 +1,78 @@
-div{
+body,html {
+    margin: 0;
+    height: 100%;
+}
+div.animado{
     transition: all ease 0.3s;
-    background-color: aqua;
+    background-color: #ccc;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 45%;
+    left: 48%;
     font-size: 16px;
-    padding: 5px;
     width: 10%;
-    height: 10%;
-    float: left;
-    margin: 25px;
+    height: 4.5%;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    
+}
+div.caixa{
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 80%;
+    
+}
+#caixa {
+    background-image: url(imagens/imagem1.jpg);
+    
+}
+#caixa1 {
+    background-image: url(imagens/imagem2.jpg);
+}
+#caixa2 {
+    background-image: url(imagens/imagem3.jpg);
+}
+#caixa3 {
+    background-image: url(imagens/imagem4.jpg);
+}
+#caixa4 {
+    background-image: url(imagens/imagem5.jpg);
+}
+#caixa5 {
+    background-image: url(imagens/imagem6.jpg);
+}
+#caixa6 {
+    background-image: url(imagens/imagem7.jpg);
 }
 
-.crescer:hover {
+#crescer:hover {
     transform: scale(1.3);
 }
 
-.diminuir {
-    width: 10%;
-    height: 10%;
-   
-}
-.diminuir:hover {
+
+#diminuir:hover {
     transform: scale(0.7);
 }
 
 
 
-.rotacionar:hover {
+#rotacionar:hover {
     transform: rotateZ(30deg);
 }
 
 
-.redondo:hover {
+#redondo:hover {
     border-radius: 100%;
 }
 
-.sombra:hover {
+#sombra:hover {
     transform: translateX(-3px);
     border-bottom: 2px solid grey;
     border-right: 2px solid grey;
@@ -45,19 +83,19 @@ div{
         transform: translateX(0px);
     }
     15% {
-        transform: translateX(5px);
+        transform: translateX(10px);
     }
     30% {
         transform: translateX(0px);
     }
     45% {
-        transform: translateX(5px);
+        transform: translateX(10px);
     }
     60% {
         transform: translateX(0px);
     }
     75% {
-        transform: translateX(5px);
+        transform: translateX(10px);
     }
     100% {
         transform: translateX(0px);
@@ -65,11 +103,11 @@ div{
 
 }
 
-.balanco:hover {
+#balanco:hover {
     animation: balancar 1s ease;
     animation-iteration-count: 1;
 }
 
-.borda:hover {
+#borda:hover {
     box-shadow: inset 0 0 0 3px;
 }
