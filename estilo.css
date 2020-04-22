@@ -22,6 +22,9 @@ body,html {
     height: 100%;
     
 }
+div.crescer{
+    animation: loadingAnimationDiv 1s;
+}
 div.animado{
     transition: all ease 0.3s;
     background-color: #ccc;
@@ -37,7 +40,6 @@ div.animado{
     margin: 0;
     padding: 0;
     text-align: center;
-    animation: loadingAnimationDiv 1s;
 }
 div.caixa{
     height: 100%;
@@ -127,8 +129,10 @@ div.caixa{
 }
 
 .balanco:hover {
-    animation: balancar 1s ease;
-    animation-iteration-count: 1;
+    animation-name: balancar;
+    animation-duration: 1s;
+    
+    
 }
 
 .borda:hover {
